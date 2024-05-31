@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="bread.png">
+        <link rel="stylesheet" href="styles.css">
+        <title>u bread</title>
+    </head>
+    <body>
+        <!--  music for all pics -->
+        <audio
+            id="backgroundMusic"
+            src="music.mp3"
+            autoplay
+            loop
+        >
+            Your browser does not support the audio element.
+        </audio>
+        <!--  music for hema pics -->
+        <audio
+            id="backgroundMusic2"
+            src="1080pMusic.mp3"
+            autoplay
+            loop
+        >
+            Your browser does not support the audio element.
+        </audio>
+        <!-- play container -->
+        <div onclick="playClick()" class="play-container" id="playContainer">
+            <i class="fa-regular fa-circle-play play-icon"></i>
+        </div>
+        <!-- Container -->
+        <div class="container" id="container">
+            <!-- instruction -->
+            <p class="instruction" id="instruction-p">
+                Select one by one please
+                <i class="fa-regular fa-face-smile-wink"></i>
+            </p>
+            <!-- text for hema -->
+            <p class="text" id="text">
+                U just need to know
+            </p>
+            <p class="love" id="love">
+                i love u
+            </p>
+            <!-- dynamic images -->
+            <img
+                src=""
+                id="moonImg"
+                alt=""
+                width="80px"
+            >
+            <!-- dropdown menu of p -->
+            <div style="margin-top: 10px">
+                <select name="cars" id="moons" onchange="moonClick(this)">
+                    <option selected disabled value="empty">select</option>
+                    <option value="144p">144p</option>
+                    <option value="240p">240p</option>
+                    <option value="480p">480p</option>
+                    <option value="720p">720p</option>
+                    <option value="1080p">1080p</option>
+                </select>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/25ca41b880.js" crossorigin="anonymous"></script>
+    </body>
+</html>
